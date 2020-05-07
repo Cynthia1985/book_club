@@ -8,7 +8,7 @@
 
 body {
     margin: 0;
-    background: url("../img/books.jpg");
+    background: url("../img/books.jpeg");
     background-size: contain;
     background-position: center;
 }
@@ -22,6 +22,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     align-content: center;
+    color: gray;
 }
 
 .book-card {
