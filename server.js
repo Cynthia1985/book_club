@@ -10,6 +10,9 @@ const mongoose = require('mongoose');
 const Book = require('./models/books.js');
 const User = require('./models/user.js');
 const methodOverride = require('method-override');
+const PORT = process.env.PORT || 3000
+const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/books'
+
 
 // middleware
 app.use(express.static('public'));
@@ -19,7 +22,7 @@ app.engine('jsx', require('express-react-views').createEngine());
 app.use(methodOverride('_method'));
 
 // moongose connection
-mongoose.connect('mongodb://localhost:27017/books', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.connection.once('open', () => {
     console.log('connected to mongo');
 });
@@ -301,7 +304,7 @@ app.put('/books/:id/buy', (req, res) => {
 });
 
 // listen 
-app.listen(3000, () => {
+app.listen(PORT, () => {
     console.log('listening');
 });
 
