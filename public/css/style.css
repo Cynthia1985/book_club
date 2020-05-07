@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Press Start 2P";
+}
+
+body {
+    margin: 0;
+    background: url("../img/books.jpg");
+    background-size: contain;
+    background-position: center;
+}
+
+.container {
+    width: 75%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.book-card {
+    transition: box-shadow .3s;
+    border-radius: 20px;
+    border: 2px solid rgba(36, 33, 33, 0.2);
+    background-color: white;
+    max-width: 300px;
+    max-height: 350px;
+    margin: 5px 20px;
+    border-color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bookcard-hover {
+    box-shadow: 8px 8px rgba(255,255,255,.8);
+}
+
+.book-card img {
+    max-width: 250px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(68, 0, 255);
+}
+
+.book-show img {
+    max-width: 375px;
+}
+
+input {
+    margin: 20px;
+}
+
+.book-form input {
+    padding: 20px;
+    font-size: 16px;
+} 
+
+.book-form h3 {
+    font-size: 2em;
+} 
+
+#delete, #buy {
+    font-size: 1.5em;
+    margin: 1% 0;
+    border-radius: 10px;
+    padding: 10px;
+}
