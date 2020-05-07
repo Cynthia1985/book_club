@@ -8,7 +8,7 @@ class Show extends React.Component {
         return (
             <Default>
             <div className="container">
-                <div class="book-show">
+                <div>
                 <a href="/books">Go Back</a>
                 <h1>{book.title}</h1>
                 <h3><a href={`/books/${book._id}/edit`}>Edit this Book</a></h3>

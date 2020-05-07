@@ -14,12 +14,15 @@ body {
 }
 
 .container {
-    width: 75%;
+    width: 100vw;
     margin: 5% auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    color: white;
 }
 
 .book-card {

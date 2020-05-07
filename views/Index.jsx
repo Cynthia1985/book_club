@@ -14,7 +14,7 @@ class Index extends React.Component {
                     {
                         books.map((book, index) => {
                             return (
-                                <div class="book-card">
+                                <div className="book-card">
                                     <a href={`/books/${book._id}`}>
                                         <img src={book.img} alt={book.title}/>
                                     </a>

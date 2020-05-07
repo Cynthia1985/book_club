@@ -9,7 +9,7 @@ class New extends React.Component {
           <div className="container">
               <h1>Create a New Book</h1>
           </div>
-          <div class="book-form">
+          <div className="book-form">
               <form action="/books" method="POST">
                   Title: <input type="text" name="title" id="title" /><br/>
                   Author: <input type="text" name="author" id="author" /><br/>

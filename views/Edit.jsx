@@ -9,7 +9,7 @@ class Edit extends React.Component {
             <Default>
             <div className="container">
                 <h1>Edit Your Book</h1>
-                <div class="book-form">
+                <div className="book-form">
                 <form action={`/books/${_id}?_method=PUT`} method="POST">
                   Title: <input type="text" name="title" id="title" defaultValue={title}/><br/>
                   Author: <input type="text" name="author" id="author" defaultValue={author}/><br/>
