@@ -12,7 +12,7 @@ class Default extends React.Component {
                 <body>
                 <div className="container">
                     <a href="/books">Home</a>
-                    <a href="/books">Shopping Cart</a>
+                    <a href="/books/new">Add New Book</a>
                     {this.props.children}
                 </div>
                     <footer>

@@ -11,15 +11,15 @@ class Show extends React.Component {
                 <div>
                 <a href="/books">Go Back</a>
                 <h1>{book.title}</h1>
-                <h3><a href={`/books/${book._id}/edit`}>Edit this Book</a></h3>
+                <p><a href={`/books/${book._id}/edit`}>Edit this Book</a></p>
                 <img src={book.img} alt={book.title}/>
                 <p>Author: {book.author}</p>
                 <p>Description: {book.description}</p>
                 <p>Rating: {book.rating}</p>
                 <p>Genre: {book.genre}</p>
                 <p>Pages: {book.pages}</p>
-                <h3>Qty: {book.qty > 0 ? `${book.qty} remaining` : 'OUT OF STOCK'}</h3>
-                <h3>Price: ${book.price}</h3>
+                <p>Qty: {book.qty > 0 ? `${book.qty} remaining` : 'OUT OF STOCK'}</p>
+                <p>Price: ${book.price}</p>
                 <form action={`/books/${book.id}?_method=PUT`} method="POST">
                     <input id="buy" type="submit" value="BUY"/>
                 </form>

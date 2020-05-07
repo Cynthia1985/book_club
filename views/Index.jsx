@@ -7,10 +7,9 @@ class Index extends React.Component {
         const { books } = this.props;
         return (
             <Default>
-            <div className="container">
+            <div>
                 <h1>Welcome to The Book Club</h1>
-                <a href="/books/new">Add New Book</a>
-                <div>
+                <div className="container">
                     {
                         books.map((book, index) => {
                             return (

@@ -20,7 +20,7 @@ class New extends React.Component {
                   Pages: <input type="text" name="pages" id="pages" /><br/>
                   Price: <input type="text" name="price" id="price" required placeholder="Must be greater than 0" /><br/>
                   Qty: <input type="text" name="qty" id="qty" /><br/>
-                  <input type="submit" name="" value="ADD BOOK"/>
+                  <input id="add" type="submit" name="" value="ADD BOOK"/>
                </form>
           </div>
           </Default>

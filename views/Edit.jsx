@@ -20,7 +20,7 @@ class Edit extends React.Component {
                   Pages: <input type="text" name="pages" id="pages" defaultValue={pages}/><br/>
                   Price: <input type="text" name="price" id="price"  defaultValue={price}/><br/>
                   Qty: <input type="text" name="qty" id="qty" defaultValue={qty}/><br/>
-                  <input type="submit" name="" value="UPDATE BOOK"/>
+                  <input id="update" type="submit" name="" value="UPDATE BOOK"/>
                 </form>
                 </div>
             </div>
