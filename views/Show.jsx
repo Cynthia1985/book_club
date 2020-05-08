@@ -8,10 +8,8 @@ class Show extends React.Component {
         return (
             <Default>
             <div className="container">
-                <div>
-                <a href="/books">Go Back</a>
+                <div className="books">
                 <h1>{book.title}</h1>
-                <p><a href={`/books/${book._id}/edit`}>Edit this Book</a></p>
                 <img src={book.img} alt={book.title}/>
                 <p>Author: {book.author}</p>
                 <p>Description: {book.description}</p>
@@ -26,6 +24,10 @@ class Show extends React.Component {
                 <form action={`/books/${book.id}?_method=DELETE`} method="POST">
                     <input id="delete" type="submit" value="DELETE"/>
                 </form>
+                </div>
+                <div>
+                <a href={`/books/${book._id}/edit`}>Edit this Book</a>
+                <a href="/books">Go Back</a>
                 </div>
             </div>
             </Default>

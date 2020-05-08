@@ -7,10 +7,12 @@
 }
 
 body {
-    margin: 0;
+    margin: 1;
     background: url("../img/books.jpeg");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    color: white;
+    text-align: center;
 }
 
 .container {
@@ -19,8 +21,16 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     color: white;
+}
+
+.books {
+    margin: 50px;
+    text-align: center;
+    background-color: rgb(184, 164, 164);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .book-card {
@@ -28,8 +38,8 @@ body {
     border-radius: 20px;
     border: 2px solid gray;
     background-color: rgb(184, 164, 164);
-    max-width: 300px;
-    max-height: 350px;
+    max-width: 350px;
+    max-height: 400px;
     margin: 5px 20px;
     border-color: gray;
     padding: 20px;
@@ -42,11 +52,6 @@ body {
     color: blue;
 }
 
-h1 {
-    max-width: 800px;
-    align-items: center;
-}
-
 h2 {
     color: blue;
 }
@@ -55,22 +60,25 @@ h3 {
     color: blue;
 }
 
-.book-card-hover {
-    box-shadow: 8px 8px rgba(255,255,255,.8);
+.book-card:hover {
+    box-shadow: 8px 8px rgba(gray);
 }
 
 .book-card img {
-    max-width: 250px;
+    max-width: 350px;
 }
 
 a {
     text-decoration: none;
     color: white;
-    display: inline;
+    background-color: goldenrod;
+    border-radius: 20px;
+    border-color: gray;
+    padding: 10px;
 }
 
 .book-show img {
-    max-width: 375px;
+    max-width: 675px;
 }
 
 input {
@@ -80,15 +88,13 @@ input {
 .book-form input {
     padding: 20px;
     font-size: 16px;
+    background-color: rgb(184, 164, 164);
 } 
 
-.book-form h3 {
-    font-size: 2em;
-} 
-
-#delete, #buy, #add, #update, #home {
+#delete, #buy, #add, #update {
     font-size: 1.5em;
     margin: 1% 0;
     border-radius: 10px;
     padding: 10px;
+    background-color: gray;
 }

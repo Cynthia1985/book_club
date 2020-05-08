@@ -222,6 +222,7 @@ app.get('/books/seed', async (req, res) => {
     } catch (err) {
      res.send(err.message)
     }
+    res.redirect('/books');
 });
 
 // show

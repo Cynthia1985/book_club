@@ -9,7 +9,8 @@ class Edit extends React.Component {
             <Default>
             <div className="container">
                 <h1>Edit Your Book</h1>
-                <div className="book-form">
+            </div>
+            <div className="book-form">
                 <form action={`/books/${_id}?_method=PUT`} method="POST">
                   Title: <input type="text" name="title" id="title" defaultValue={title}/><br/>
                   Author: <input type="text" name="author" id="author" defaultValue={author}/><br/>
@@ -22,7 +23,6 @@ class Edit extends React.Component {
                   Qty: <input type="text" name="qty" id="qty" defaultValue={qty}/><br/>
                   <input id="update" type="submit" name="" value="UPDATE BOOK"/>
                 </form>
-                </div>
             </div>
             </Default>
         )
