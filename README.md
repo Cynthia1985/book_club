@@ -10,11 +10,13 @@ MongoDB
 JSON 
 Mongoose 
 CSS 
+Heroku
 
 ## Approach: 
 On the index page will provide the user a list of books as cards. Then the user click on one of them and will show a description of a book (title, image, author, description, rating, genre, pages, qty, price). The user will be able to delete, buy, edit or go back to the home page.
 
 ## Challenges:
-Get my seed route to work and styling.
+Get my seed route to work and styling. 
 
-## App Demo: 
+## App Demo:
+https://second-project22.herokuapp.com/books 
