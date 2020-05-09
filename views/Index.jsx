@@ -1,6 +1,6 @@
 
 const React = require('react');
-const Default = require('./Default')
+const Default = require('./Default');
 
 class Index extends React.Component {
     render() {
@@ -8,8 +8,8 @@ class Index extends React.Component {
         return (
             <Default>
             <div className="container">
-                <h1>Welcome to The Kid's Book Club</h1>
-                <p>Hello.<br/>I'm a librarian, and I can help you find a book.<br/>Give it a try!</p>
+                <h1>Welcome to The Kid's Book Club<br/>
+                Look for a book!</h1>
                 <div className="container">
                     {
                         books.map((book, index) => {

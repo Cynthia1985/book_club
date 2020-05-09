@@ -8,7 +8,6 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const Book = require('./models/books.js');
-const User = require('./models/user.js');
 const methodOverride = require('method-override');
 const PORT = process.env.PORT || 3000
 const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/books'
@@ -236,13 +235,6 @@ app.get('/books/:id', (req, res) => {
     });
 });
 
-// user
-app.get('/user/', (req, res) => {
-  User.findById(req.params.id, (error, foundUser) => {
-    res.render('Show', {user: foundUser});
-  });
-});
-
 // delete
 app.delete('/books/:id', (req, res) => {
     // Delete document from collection
@@ -273,7 +265,6 @@ app.put('/books/:id', (req, res) => {
 // buy
 app.put('/books/:id/buy', (req, res) => {
     Book.findById(req.params.id, (error, book) => {
-        User.shoppingCart ++;
         book.qty -= 1;
         Book.findByIdAndUpdate(req.params.id, book, (error, updatedBook) => {
           res.redirect('/books');

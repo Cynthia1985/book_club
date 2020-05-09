@@ -1,6 +1,6 @@
 
 const React = require('react');
-const Default = require('./Default')
+const Default = require('./Default');
 
 class Show extends React.Component {
     render() {
@@ -26,8 +26,8 @@ class Show extends React.Component {
                 </form>
                 </div>
                 <div>
-                <a href={`/books/${book._id}/edit`}>Edit this Book</a>
-                <a href="/books">Go Back</a>
+                <a href={`/books/${book._id}/edit`}>EDIT THIS BOOK</a>
+                <a href="/books">GO BACK</a>
                 </div>
             </div>
             </Default>

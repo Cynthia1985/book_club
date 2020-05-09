@@ -1,43 +1,53 @@
 
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
-
 * {
     box-sizing: border-box;
-    font-family: "Press Start 2P";
+    font-family: starSolid;
 }
 
 body {
-    margin: 1;
-    background: url("../img/books.jpeg");
+    margin: 2;
+    background: url("../img/book.jpeg");
     background-size: contain;
     background-position: center;
     color: white;
-    text-align: center;
+    align-items: center;
+}
+
+header {
+    height: 300px;
+    background-image: url("../img/books.jpeg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    box-sizing: border-box;
 }
 
 .container {
-    width: 90%;
+    width: 75%;
     margin: 10% auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     color: white;
+    text-align: center;
+    font-family: starSolid;
 }
 
 .books {
     margin: 50px;
     text-align: center;
-    background-color: rgb(184, 164, 164);
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
+    color: black;
 }
 
 .book-card {
     transition: box-shadow .3s;
     border-radius: 20px;
-    border: 2px solid gray;
-    background-color: rgb(184, 164, 164);
+    border: 4px solid gray;
+    background-color: white;
     max-width: 350px;
     max-height: 400px;
     margin: 5px 20px;
@@ -49,19 +59,28 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    color: blue;
+    color: black;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: starSolid;
+    text-align: center;
+    z-index: 10;
 }
 
 h2 {
-    color: blue;
+    color: black;
 }
 
 h3 {
-    color: blue;
+    color: black;
 }
 
-.book-card:hover {
-    box-shadow: 8px 8px rgba(gray);
+p {
+    font-size: 30px;
+    text-align: center;
 }
 
 .book-card img {
@@ -70,11 +89,12 @@ h3 {
 
 a {
     text-decoration: none;
-    color: white;
-    background-color: goldenrod;
-    border-radius: 20px;
+    color: rgb(24, 23, 23);
+    background-color: white;
+    border-radius: 3em;
     border-color: gray;
-    padding: 10px;
+    padding: 20px;
+    margin: 2;
 }
 
 .book-show img {
@@ -88,7 +108,8 @@ input {
 .book-form input {
     padding: 20px;
     font-size: 16px;
-    background-color: rgb(184, 164, 164);
+    margin: 2;
+    text-align: center;
 } 
 
 #delete, #buy, #add, #update {

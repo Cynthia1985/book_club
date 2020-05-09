@@ -10,11 +10,17 @@ class Default extends React.Component {
                     <title>Book Club</title>
                 </head>
                 <body>
-                <div className="container">
-                    <a href="/books">Home</a>
-                    <a href="/books/new">Add New Book</a>
+                    <header>
+                    <div className="container">
+                    
+                    <a href="/books">HOME</a>
+                    <a href="/books/new">ADD NEW BOOK</a>
+                    
+                    </div>
+                    </header>
+                    <div>
                     {this.props.children}
-                </div>
+                    </div>
                     <footer>
                     </footer>
                 </body>

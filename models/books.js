@@ -1,5 +1,6 @@
 
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 // create Schema
 const bookSchema = new mongoose.Schema({

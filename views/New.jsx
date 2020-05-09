@@ -9,7 +9,8 @@ class New extends React.Component {
           <div className="container">
               <h1>Create a New Book</h1>
           </div>
-          <div className="book-form">
+          <div className="container">
+              <div className="book-form">
               <form action="/books" method="POST">
                   Title: <input type="text" name="title" id="title" /><br/>
                   Author: <input type="text" name="author" id="author" /><br/>
@@ -22,6 +23,7 @@ class New extends React.Component {
                   Qty: <input type="text" name="qty" id="qty" /><br/>
                   <input id="add" type="submit" name="" value="ADD BOOK"/>
                </form>
+               </div>
           </div>
           </Default>
         );
