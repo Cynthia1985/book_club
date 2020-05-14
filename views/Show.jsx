@@ -25,10 +25,12 @@ class Show extends React.Component {
                     <input id="delete" type="submit" value="DELETE"/>
                 </form>
                 </div>
-                <div>
-                <a href={`/books/${book._id}/edit`}>EDIT THIS BOOK</a>
-                <a href="/books">GO BACK</a>
-                </div>
+                <nav class="main-nav">
+                    <ul>
+                    <li><a href={`/books/${book._id}/edit`}>EDIT BOOK</a></li>
+                    <li><a href="/books/new">ADD BOOK</a></li>
+                    </ul>
+                </nav>
             </div>
             </Default>
         )

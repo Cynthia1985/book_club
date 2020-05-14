@@ -8,9 +8,9 @@ class Index extends React.Component {
         return (
             <Default>
             <div className="container">
-                <h1>Welcome to The Kid's Book Club<br/>
+                <h1>Kid's Book Index Page<br/>
                 Look for a book!</h1>
-                <div className="container">
+                <div className="row">
                     {
                         books.map((book, index) => {
                             return (
@@ -18,10 +18,8 @@ class Index extends React.Component {
                                     <a href={`/books/${book._id}`}>
                                         <img src={book.img} alt={book.title}/>
                                     </a>
-                                    <a href={`/books/${book.id}`}>
-                                        <h2>{book.title}</h2>
-                                    </a>
-                                    <h3>Price: ${book.price}</h3>
+                                    <h2>{book.title}</h2>
+                                    <h3>{book.author}</h3>
                                 </div>
                             )
                         })

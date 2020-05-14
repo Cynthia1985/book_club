@@ -8,9 +8,7 @@ class New extends React.Component {
           <Default>
           <div className="container">
               <h1>Create a New Book</h1>
-          </div>
-          <div className="container">
-              <div className="book-form">
+              <div className="form-group">
               <form action="/books" method="POST">
                   Title: <input type="text" name="title" id="title" /><br/>
                   Author: <input type="text" name="author" id="author" /><br/>

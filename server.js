@@ -267,7 +267,7 @@ app.put('/books/:id/buy', (req, res) => {
     Book.findById(req.params.id, (error, book) => {
         book.qty -= 1;
         Book.findByIdAndUpdate(req.params.id, book, (error, updatedBook) => {
-          res.redirect('/books');
+          res.redirect(`/books/${req.params.id}`);
         });
     });
 });
