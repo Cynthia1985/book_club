@@ -20,6 +20,9 @@ class Index extends React.Component {
                                     </a>
                                     <h2>{book.title}</h2>
                                     <h3>{book.author}</h3>
+                                    <form action={`/books/${book.id}?_method=DELETE`} method="POST">
+                    <input id="delete" type="submit" value="DELETE"/>
+                </form>
                                 </div>
                             )
                         })
