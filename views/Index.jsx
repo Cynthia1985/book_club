@@ -7,7 +7,7 @@ class Index extends React.Component {
         return (
             <Default>
             <div className="container">
-                <h1>Kid's Entertainment Journal</h1>
+                <h1>Kid's Entertainment App</h1>
                 <div className="card-body">
                 <div className="book-index"> 
                     <a href="/books"><h1>BOOKS</h1></a>

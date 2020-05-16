@@ -1,7 +1,7 @@
 # book_club
 
 ## Concept: 
-Book Club App, is a full-stack web application. This web application allows users to see a list of books displayed as cards, edit, buy, delete, and create their new book.
+Kid's Entertainment App, is a full-stack web application. This web application allows user to see a list of books, movies and games displayed as cards, the user can edit, buy, delete, and create them.
 
 ## Technologies Used: 
 React 
@@ -12,9 +12,6 @@ Mongoose
 CSS 
 Bootstrap
 Heroku
-
-## Approach: 
-On the index page will provide the user a list of books as cards. Then the user click on one of them and will show a description of a book (title, image, author, description, rating, genre, pages, qty, price). The user will be able to delete, buy, edit or go back to the home page.
 
 ## Challenges:
 Get my seed route to work and styling. 
