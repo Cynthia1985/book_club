@@ -2,7 +2,7 @@
 const React = require('react');
 const Default = require('./Default');
 
-class New extends React.Component {
+class BookNew extends React.Component {
     render() {
       return (
           <Default>
@@ -28,4 +28,4 @@ class New extends React.Component {
     }
 }
 
-module.exports = New;  
+module.exports = BookNew;  

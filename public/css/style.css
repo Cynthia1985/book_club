@@ -2,8 +2,6 @@
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 :root {
@@ -13,8 +11,7 @@
 }
 
 body {
-    background: url("../img/book.jpeg");
-    color: white; 
+    background-color: silver;
     font-size: 1.5em;
 }
 
@@ -70,6 +67,36 @@ body {
     border: 4px solid white;
 }
 
+.book-index {
+    background-image: url("../img/books.jpeg");
+    background-position: 50%;
+    padding: 3rem;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+    border: 4px solid gray;
+    text-align: center;
+}
+
+.movie-index {
+    background-image: url("../img/movies.jpeg");
+    background-position: 50%;
+    padding: 3rem;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+    border: 4px solid gray;
+    text-align: center;
+}
+
+.game-index {
+    background-image: url("../img/games.jpeg");
+    background-position: 50%;
+    padding: 3rem;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+    border: 4px solid gray;
+    text-align: center;
+}
+
 h1 {
     font-size: 3em;
     font-family: 'Acme', sans-serif;
@@ -111,4 +138,9 @@ input {
     padding: 10px;
     background-color: gray;
     font-family: 'Acme', sans-serif;
+}
+
+footer {
+    font-family: 'Acme', sans-serif;
+    text-align: center;
 }

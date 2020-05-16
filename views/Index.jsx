@@ -4,33 +4,30 @@ const Default = require('./Default');
 
 class Index extends React.Component {
     render() {
-        const { books } = this.props;
         return (
             <Default>
             <div className="container">
-                <h1>Kid's Book Index Page<br/>
-                Look for a book!</h1>
-                <div className="row">
-                    {
-                        books.map((book, index) => {
-                            return (
-                                <div className="book-card">
-                                    <a href={`/books/${book._id}`}>
-                                        <img src={book.img} alt={book.title}/>
-                                    </a>
-                                    <h2>{book.title}</h2>
-                                    <h3>{book.author}</h3>
-                                    <form action={`/books/${book.id}?_method=DELETE`} method="POST">
-                    <input id="delete" type="submit" value="DELETE"/>
-                </form>
-                                </div>
-                            )
-                        })
-                    }
+                <h1>Kid's Entertainment Journal</h1>
+                <div className="card-body">
+                <div className="book-index"> 
+                    <a href="/books"><h1>BOOKS</h1></a>
+                </div>
+                </div>
+                <div className="card-body">
+                <div className="movie-index">
+                    <a href="/movies"><h1>MOVIES</h1></a>
+                </div>
+                </div>
+                <div className="card-body">
+                <div className="game-index">
+                    <a href="/games"><h1>GAMES</h1></a>
+                </div>
                 </div>
             </div>
+            <footer>
+            </footer>
             </Default>
-        )
+         )
     }
 }
 

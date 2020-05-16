@@ -10,6 +10,7 @@ MongoDB
 JSON 
 Mongoose 
 CSS 
+Bootstrap
 Heroku
 
 ## Approach: 

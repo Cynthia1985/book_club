@@ -2,7 +2,7 @@
 const React = require('react');
 const Default = require('./Default');
 
-class Show extends React.Component {
+class BookShow extends React.Component {
     render() {
         const { book } = this.props;
         return (
@@ -28,7 +28,7 @@ class Show extends React.Component {
                 <nav class="main-nav">
                     <ul>
                     <li><a href={`/books/${book._id}/edit`}>EDIT BOOK</a></li>
-                    <li><a href="/books/new">ADD BOOK</a></li>
+                    <li><a href="/books/bookNew">ADD BOOK</a></li>
                     </ul>
                 </nav>
             </div>
@@ -37,4 +37,4 @@ class Show extends React.Component {
     }
 }
 
-module.exports = Show;
+module.exports = BookShow;
