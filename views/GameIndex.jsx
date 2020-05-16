@@ -9,7 +9,7 @@ class GameIndex extends React.Component {
             <Default>
             <div className="container">
                 <h1>Kid's Game Index Page<br/>
-                Look for a Game</h1>
+                Look for a Game!</h1>
                 <div className="row">
                     {
                         games.map((game, index) => {
