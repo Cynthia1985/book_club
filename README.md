@@ -17,4 +17,4 @@ Heroku
 Get my seed route to work and styling. 
 
 ## App Demo:
-https://second-project22.herokuapp.com/books 
+https://second-project22.herokuapp.com/index
