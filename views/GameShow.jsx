@@ -22,7 +22,7 @@ class GameShow extends React.Component {
                     <input id="delete" type="submit" value="DELETE"/>
                 </form>
                 </div>
-                <nav class="main-nav">
+                <nav className="main-nav">
                     <ul>
                     <li><a href={`/games/${game._id}/edit`}>EDIT GAME</a></li>
                     <li><a href="/games/gameNew">ADD GAME</a></li>

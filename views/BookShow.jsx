@@ -25,7 +25,7 @@ class BookShow extends React.Component {
                     <input id="delete" type="submit" value="DELETE"/>
                 </form>
                 </div>
-                <nav class="main-nav">
+                <nav className="main-nav">
                     <ul>
                     <li><a href={`/books/${book._id}/edit`}>EDIT BOOK</a></li>
                     <li><a href="/books/bookNew">ADD BOOK</a></li>

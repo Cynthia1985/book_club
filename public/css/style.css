@@ -144,3 +144,7 @@ footer {
     font-family: 'Acme', sans-serif;
     text-align: center;
 }
+
+.carousel-inner {
+	height: 200px;
+}
